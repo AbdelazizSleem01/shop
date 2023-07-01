@@ -41,6 +41,26 @@
 
 /* start-Carousel */
 
+.carousel.slide{
+    animation-duration: 2s;
+    animation-name: slidein;
+    animation-direction:alternate;
+    animation-timing-function: ease-in-out;
+    animation-play-state: running;
+ 
+
+}
+@keyframes slidein {
+    from {
+      margin-left: -100%;
+      width: 100%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 
 .max-w{
    max-width: 1000px;
@@ -75,8 +95,34 @@
 
 /* card-start */
 
+.row.mg-l{
+    animation-duration: 3s;
+    animation-name: Carousel;
+    animation-direction:alternate;
+    animation-timing-function: ease-in-out;
+    animation-play-state: running;
+ 
+
+
+}
+@keyframes Carousel {
+    from {
+      margin-left: 100%;
+      width: 100%;
+    }
+  
+    to {
+      margin-left: 8%;
+      width: 100%;
+    }
+
+    
+
+  }
+
 .mg-l{
     margin-left: 100px;
+    
     
 }
 .container-fluid h1{
@@ -139,7 +185,6 @@
 /* About Us */
 
 .text{
-
     margin-top: 100px;
 }
 .col-sm-12 h2{
@@ -162,6 +207,7 @@
 }
 .p{
     padding-bottom: 100px;
+    
 }
 
 .container h1{
@@ -396,6 +442,25 @@
   
 
     
+    }
+    
+}
+
+/* carousel slide */
+
+@media (max-width: 576px) {
+
+    .carousel-inner {
+        
+        height: 400px;
+
+  
+
+    
+    }
+    .d-block.w-100.imge{
+        height: 260px;
+
     }
     
 }
