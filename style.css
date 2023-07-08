@@ -11,6 +11,7 @@
     font-weight: 500;
     color: black;
     font-size: 20px;
+    
 }
 
 
@@ -30,7 +31,6 @@
     background-color: rgb(192, 150, 9);
     width: 100%;
     height: 2200px;
- 
 }
 
 
@@ -40,27 +40,9 @@
 
 
 /* start-Carousel */
-
-.carousel.slide{
-    animation-duration: 2s;
-    animation-name: slidein;
-    animation-direction:alternate;
-    animation-timing-function: ease-in-out;
-    animation-play-state: running;
- 
-
+.margin{
+    overflow: hidden;
 }
-@keyframes slidein {
-    from {
-      margin-left: -100%;
-      width: 100%;
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
 
 .max-w{
    max-width: 1000px;
@@ -95,30 +77,6 @@
 
 /* card-start */
 
-.row.mg-l{
-    animation-duration: 3s;
-    animation-name: Carousel;
-    animation-direction:alternate;
-    animation-timing-function: ease-in-out;
-    animation-play-state: running;
- 
-
-
-}
-@keyframes Carousel {
-    from {
-      margin-left: 100%;
-      width: 100%;
-    }
-  
-    to {
-      margin-left: 8%;
-      width: 100%;
-    }
-
-    
-
-  }
 
 .mg-l{
     margin-left: 100px;
@@ -132,9 +90,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-shadow: 2px 1px 1px   rgb(207, 99, 10);
     border-bottom: 2px solid rgb(207, 99, 10) ;
-    width: 50px;
-
-    
+    width: 50px; 
 }
 .container-fluid h2{
     text-align: left;
@@ -163,7 +119,6 @@
     margin-top: 6em;
     border-bottom: 2px solid rgb(207, 99, 10) ;
     width: 150px;
-
 }
 
 
@@ -171,7 +126,6 @@
     margin-top: 6em;
     border-bottom: 2px solid rgb(207, 99, 10) ;
     width: 190px;
-
 }
 .border-bp{
     border-bottom: 2px solid rgb(91, 91, 91);
@@ -179,7 +133,6 @@
     width: 1000px;
     margin-left: 150px;
     margin-bottom: 50px;
-   
 }
 
 /* About Us */
@@ -304,32 +257,57 @@
         width: 100%;
     }
 }
-@media (max-width: 576px) {
-    .row.mg-l {
-        display: block;
-        float: left;
+@media (max-width:768px) {
+    .margin {
         margin-bottom: 1.5em;
-        width: 100%;
-        
-        position: relative;
-        top:-3rem;
-        right: 100px; 
-
+        max-width: 100%;  
+        align-items: center;
+       
     
     }
 }
-@media (max-width: 329px) {
+
+@media (max-width: 576px) {
+    .row.mg-l {
+        margin-bottom: 1.5em;
+        width: 100%;  
+        align-items: center;
+        position: relative;
+        top:-3rem;
+        right: 20px; 
+    }
+}
+@media (max-width: 576px) {
+    .card{
+        margin-bottom: 1.5em;
+        width:100px; 
+         
+   
+
+    }
+}
+
+
+@media (max-width: 415px) {
     .row.mg-l {
         display: block;
         float: left;
         margin-bottom: 1.5em;
         width: 100%;
-        
         position: relative;
         top:-3rem;
-        right: 120px; 
-
-    
+        right: 50px; 
+    }
+}
+@media (max-width: 280px) {
+    .row.mg-l {
+        display: block;
+        float: left;
+        margin-bottom: 1.5em;
+        width: 100%;
+        position: relative;
+        top:-3rem;
+        right: 50%; 
     }
 }
 
@@ -401,66 +379,35 @@
     .navbar-toggler {
        position: relative;
        bottom: 10px;
-
-
     }
     
 }
-@media (max-width: 1000px) {
 
-    .navbar-brand {
-       padding-top: 10px;
-    
-
-
-    }
-    
-}
 @media (max-width: 576px) {
 
-    .container-fluid h2 {
-        margin-left:-80px;
-        display: flex;
+    .border-h2 h1 {
+        margin-left:30px;
+       
     
     }
     
 }
-@media (max-width: 576px) {
 
-    .border-bp {
-        margin-left:0px !important;
-    }
-    
-}
 @media (max-width: 576px) {
 
     .container-fluid h1 {
         align-items: center;
-
-        transform: translate(-50% , -50%)!important;
-
-  
-
-    
-    }
-    
+    }  
 }
+
 
 /* carousel slide */
 
 @media (max-width: 576px) {
 
-    .carousel-inner {
-        
-        height: 400px;
 
-  
-
-    
-    }
     .d-block.w-100.imge{
-        height: 260px;
-
+        height: 315px;
     }
-    
+
 }
